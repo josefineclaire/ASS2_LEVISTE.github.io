@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(22, 10, 0);
+    margin: 0; /* Remove default body margin */
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.445), rgba(173, 63, 0, 0)), url(image/header.jpg);
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative; 
+}
+
+.navbar {
+    height: 50px; /* Adjusted height for skinnier navbar */
+    width: auto; /* Auto width to fit content */
+    display: flex;
+    align-items: center; /* Vertically centers the navbar content */
+    position: fixed;
+    top: 10px; /* Distance from the top of the viewport */
+    right: 20px; /* Adjust distance from the right side */
+    margin-left: auto; /* Pushes the navbar to the right */
+    z-index: 1000;
+    padding: 10px 20px; /* Adds some space on left and right for aesthetics */
+    background-color: #ff80002d;
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+nav ul {
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+    display: flex; /* Makes sure items are in a row */
+    justify-content: flex-end; /* Aligns the list items to the right */
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 10px; /* Reduced margin for even spacing */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 15px; /* Padding for better click area */
+}
+
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+h1 {
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+    font-family: "oswald";
+}
+
+h2 {
+    color: #fff;
+    font-size: 100px;
+    line-height: 60%;
+    text-align: center;
+    font-family: "great vibes";
+}
+
+p {
+    color: #fdea3b;
+    font-size: medium;
+    text-align: center;
+    font-family: "hammersmith one";
+}
+.bottom-right-link {
+    position: sticky;
+    text-align: right;
+    bottom: 20px; /* Adjust the margin from the bottom */
+    right: 20px;  /* Adjust the margin from the right */
+    z-index: 1000;
+}
+
+.bottom-right-link a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: underline;
+    font-family: "Hammersmith One", sans-serif;
+}
+
+.bottom-right-link a:hover {
+    text-decoration: underline;
+    color: #ffbe81; /* Optional: Change color on hover */
+}
+.SYNOPSIS {
+    display: flex;
+    justify-content: center; /* Change this to center items */
+    align-items: center;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    margin: 0;
+    margin-bottom: 10%;
+    height: auto; /* Use auto for height to accommodate content */
+    width: 100%; 
+    padding: 20px 5%; /* Add some padding for better appearance */
+    box-sizing: border-box;
+    background-color: rgb(22, 10, 0);
+}
+
+.video-container, .SYNOPSIS h3 {
+    flex-basis: 45%; /* Reduce the basis to fit both items closer together */
+    margin: 10px; /* Add margin to separate items slightly */
+    margin-top: 10%;
+    color: #e0a76e;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.SYNOPSIS video {
+    width: 300%;
+    max-width: 500px; /* Adjust max-width for better responsiveness */
+}
+.video-container p a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.video-container p a:hover {
+    text-decoration: underline;
+    color: #ffbe81; 
+}
+
+#registration {
+    text-align: center;
+    padding: 40px 0;
+    background-color: rgb(22, 10, 0);
+    color: #ffbe81;
+}
+
+#registration h2 {
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 40px;
+    font-size: 450%;
+}
+
+#registration h3 {
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    font-size: large;
+}
+
+form {
+    display: block;
+    margin: 0 auto; /* Centers the form */
+    text-align: left;
+    font-family: "Hammersmith One", sans-serif;
+    font-size: medium;
+    width: 50%; /* Adjust this to control the length of the input fields */
+    max-width: 600px; /* Ensures it doesn't get too wide on large screens */
+    color: #fff;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+form input {
+    width: 100%; /* Takes up the full width of the form */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffbe81;
+    background-color: rgb(34, 17, 5);
+    color: #fff;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffbe81;
+    color: rgb(22, 10, 0);
+    font-size: medium;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #e0a76e;
+}
+
+@media (max-width: 768px) {
+    .container {
+        background-position: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 60px; /* Adjust the size as needed */
+    }
+
+    h2 {
+        font-size: 50px; /* Adjust the size as needed */
+    }
+
+    p {
+        font-size: small;
+    }
+}
+@media (max-width: 768px) {
+    .navbar {
+        height: auto; /* Adjust height as needed */
+        padding: 10px; /* Add padding if needed */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row; /* Stack items vertically on smaller screens */
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 10px; /* Adjust spacing between items */
+    }
+
+    nav ul li a {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 10px; /* Further reduce font size if needed */
+    }
+}
+
+@media (max-width: 768px) {
+    .SYNOPSIS {
+        margin-top: 10%;
+        flex-direction: column; /* Stack video and text vertically */
+        justify-content: center; /* Center them */
+        align-items: center; /* Center alignment */
+    }
+
+    .video-container, .SYNOPSIS h3 {
+        flex-basis: 100%; /* Take full width */
+        margin: 10px 0; /* Margin for top and bottom */
+    }
+
+    .SYNOPSIS video {
+        max-width: 90%; /* Adjust video size */
+    }
+}
+
+@media (max-width: 768px) {
+    form input {
+        padding: 8px; /* Adjust padding for better spacing */
+        }
+
+    form label {
+        margin-bottom: 10px; /* Increase margin */
+     }
+
+    form {
+        width: 80%; /* Make the form take more width on small screens */
+     }
+    }
+
+@media (max-width: 768px) {
+    #registration h2 {
+         margin-top: 10%; /* Maintain the existing margin if necessary */
+        font-size: 200%; /* Adjust heading size */
+        line-height: 1.2; /* Add line-height for better spacing */
+    }
+    
+    #registration h3 {
+        font-size: medium; /* Adjust subheading size */
+        line-height: 1.5; /* Adjust line-height for readability */
+        margin-bottom: 20px; /* Add some bottom margin to separate from the form */
+        }
+    }
+    /* Ensure no background image in the footer */
+    footer {
+        background-color: rgb(22, 10, 0); /* Set the background color */
+        text-align: center; /* Center the text */
+        padding: 10px 0; /* Adjust the padding for height */
+        margin-top: 2%; /* Space above the footer */
+        width: 100%; /* Make sure it spans the full width */
+        background-image: none; /* Ensure no image is set */
+        box-sizing: border-box; /* Ensure padding is included in height calculation */
+    }
+    
+    /* Make sure the footer content doesn’t span the entire screen */
+    footer p {
+        margin: 0 auto; /* Center the text block */
+        max-width: 800px; /* Optional: Adjust to limit the width */
+        color: rgb(255, 255, 255); /* Set the text color */
+        margin-top: 0; /* Remove extra space */
+        margin-top: 2%;
+    }
+    
+    /* Remove any unintended styles */
+    footer::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    footer a {
+        color: #ffbe81; /* Change the link color if needed */
+        text-decoration: underline; /* Remove underline from links */
+    }
+    
+    footer a:hover {
+        text-decoration: underline; /* Add underline on hover */
+    }
+    /* Style for the assignment button */
+.assignment-button {
+    position: fixed;
+    right: 20px; /* Distance from the right edge of the viewport */
+    bottom: 20px; /* Distance from the bottom edge of the viewport */
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #ff80002d; /* Change this to your preferred color */
+    text-decoration: none;
+    border-radius: 20px; /* Rounded corners */
+    border: none;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a floating effect */
+}
+
+.assignment-button:hover {
+    background-color: #ff80002d; /* Darker shade on hover */
+}
+
+    
+    
+    

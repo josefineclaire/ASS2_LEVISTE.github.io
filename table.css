@@ -1,0 +1,144 @@
+body {
+    background-image: url("image/paper (1).jpg"); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    margin: 2%;
+    padding: 0;
+    min-height: 100vh; /* Ensure body covers full height */
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scrolling of the body */
+    display: flex; /* Center content vertically and horizontally */
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Space between the title and the table */
+    font-family: cursive;
+    font-size: 2em; /* Responsive font size */
+}
+
+.table-container {
+    width: 100%; /* Full width to ensure container fits within viewport */
+    overflow-x: auto; /* Allows horizontal scrolling within container */
+    display: flex; /* Use flexbox to center the table */
+    justify-content: center; /* Center the table horizontally */
+    padding: 3 10px; /* Add some padding to prevent text from touching edges */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow-x: auto; 
+    background-color: #e6b0ff38; /* Background color for the table */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.192); /* Optional shadow for aesthetics */
+}
+
+th, td {
+    border: 1px solid #58006941;
+    padding: 8px; /* Padding for readability */
+    text-align: center;
+    font-size: 1em; /* Responsive font size */
+    white-space: wrap;
+}
+
+th {
+    background-color: #37074141;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* General Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em; /* Smaller font size for mobile */
+    }
+
+    table {
+        font-size: 0.9em; /* Adjusted font size for table content */
+    }
+
+    th, td {
+        padding: 8px; /* Reduced padding */
+        font-size: 0.9em; /* Reduced font size */
+    }
+}
+
+/* Media Query for Very Small Screens */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Smaller font size for very small screens */
+    }
+
+    table {
+        font-size: 0.8em; /* Further reduced font size */
+    }
+
+    th, td {
+        padding: 6px; /* Further reduced padding */
+        font-size: 0.8em; /* Smaller font size for readability */
+    }
+}
+footer {
+    text-align: center; /* Center the text */
+    padding: 5px 0; /* Adjust the padding for height */
+    margin-top: 0; /* Space above the footer */
+    width: 100%; /* Make sure it spans the full width */
+    box-sizing: border-box; /* Ensure padding is included in height calculation */
+}
+
+/* Make sure the footer content doesn’t span the entire screen */
+footer p {
+    margin: 0 auto; /* Center the text block */
+    max-width: 800px; /* Optional: Adjust to limit the width */
+    color: rgb(0, 0, 0); /* Set the text color */
+    margin-top: 0; /* Remove extra space */
+    margin-top: 2%;
+}
+
+/* Remove any unintended styles */
+footer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer a {
+    color: #000000; /* Change the link color if needed */
+    text-decoration: underline; /* Remove underline from links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Style for the assignment button */
+.assignment-button {
+    position: fixed;
+    left: 20px; /* Distance from the left edge of the viewport */
+    bottom: 20px; /* Distance from the bottom edge of the viewport */
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #37074171; /* Change this to your preferred color */
+    text-decoration: none;
+    border-radius: 20px; /* Rounded corners */
+    border: none;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a floating effect */
+}
+
+.assignment-button:hover {
+    background-color: #37074171; /* Darker shade on hover */
+}
+
